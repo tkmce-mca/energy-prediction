@@ -1,0 +1,13 @@
+Current Status:
+      Download and install Python,Anaconda,Spyder.
+      Learn more about energy,weather,temperature.
+      Creating Datasets of power consumption.
+      Learning python.
+Plans for the current week and comming week:
+      Create the full datasets of power consumption.
+      Create datasets of rainfall,temperature.
+      Learn how to implement CNN-LSTM model in energy prediction.
+Open issues:
+      Now we don't have dataset, now we trying to create datasets of daily power consumption,rainfall,temperature data of about 5 years.
+      So we need time.
+      
