@@ -1,0 +1,6 @@
+curent status
+       create data set of power consumption and climate
+       for model creation we are using LSTM and CNN
+Future plans
+         create the full dataset
+         creating the model
