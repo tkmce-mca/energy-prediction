@@ -1,0 +1,8 @@
+Current Status:
+        Complete the dataset creation of energy Consumption.
+        Tried to implement the linear regression algorithm.
+        By the discussion with project guide we decided to predict weather and follows the energy condumption prediction. 
+Future Plan:
+      Implement and compare different algorithms.
+      And should try to predict the weather.
+      Based on the predicted weather feature value will try to predict the energy consumption
