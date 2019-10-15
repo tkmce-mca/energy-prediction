@@ -1,0 +1,58 @@
+import pandas as pd
+
+data=pd.read_csv("C:\\Users\\Swathi\\Desktop\\climate1.csv")
+
+
+max=float(input("Enter the maximum temperature"))
+min=float(input("Enter the minimum temperature"))
+h=data['max']
+w=data['min']
+s=data['rainfall']
+dist=[]
+ind=[]
+temp=0
+a=[]
+c=[]
+sz=[]
+for i in range(len(h)):
+    x=(((int(h[i])-max)**2) + ((int(w[i])-min)**2)**0.5)
+    dist.append(x)
+ind=dist
+b=[]
+for i in range(len(dist)):
+    b.append(i)
+
+for i in range(len(dist)):
+    for j in range(i+1,len(dist)):
+        if dist[i]>dist[j]:
+            temp=dist[i]
+            t1=b[i]
+            dist[i]=dist[j]
+            b[i]=b[j]
+            dist[j]=temp
+            b[j]=t1
+            
+
+            
+a=[dist[0],dist[1],dist[2]]
+   
+
+c=[b[0],b[1],b[2]] 
+for i in range(len(c)):
+    x=c[i]
+    y=s[x]
+    sz.append(y)
+
+c1=sz.count(sz[0])
+c2=sz.count(sz[1])
+c3=sz.count(sz[2])
+
+if c1>1 :
+    print(sz[0])
+elif c2>1:
+    print(sz[1])
+elif c3>1:
+    print(sz[2])
+else:
+    print(sz[0])
+    
